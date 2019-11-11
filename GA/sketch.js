@@ -10,7 +10,7 @@ let resolution = 200;
 
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(1000, 1000);
   background(0);
   target = [];
   // Create target array
@@ -63,7 +63,7 @@ function keyPressed(){
     for (let x = 0; x < resolution; x++){
       for (let y = 0; y < resolution; y++){
         // Get the pixel value (low resolution) of the user's drawing
-        thepix = get(x*4, y*4);
+        thepix = get(x*5, y*5);
         target[x][y] = map(thepix[0], 0, 255, 0, 1);
       }
     }
@@ -84,7 +84,7 @@ function printBest(){
     for (let y = 0; y < resolution; y++) {
       fill(map(pic.genes[x][y], 0, 1, 0, 255));
       rectMode(CENTER);
-      rect(x*4, y*4, 4, 4);
+      rect(x*5, y*5, 5, 5);
     }
   } 
   // Print some useful metadata
