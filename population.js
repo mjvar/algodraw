@@ -6,7 +6,7 @@ class Population {
     this.finished = false; // Are we finished evolving?
     this.target = p; // Target phrase
     this.mutationRate = m; // Mutation rate
-    this.perfectScore = 0.96; //Perfect score is nearly impossible, so we settle for 96%
+    this.winScore = 0.965; //Win score set to 96.5% because a 100% score is practically impossible
 
     this.best = "";
 
@@ -77,7 +77,7 @@ class Population {
     }
 
     // Check if the target has been met
-    if (worldrecord > this.perfectScore) {
+    if (worldrecord > this.winScore) {
       this.finished = true;
     }
     return index;
