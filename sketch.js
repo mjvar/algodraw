@@ -41,9 +41,9 @@ function draw() {
     // Print the best performer in the generation
     printBest();
 
-    // If we found the target phrase, stop
+    // If we get close enough to the target image, stop
     if (population.isFinished()) {
-      println(millis()/1000.0);
+      text("Drawing recreated in " + population.getGenerations() + " generations!", 20, 720);
       noLoop();
     }
   }
