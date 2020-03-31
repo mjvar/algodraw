@@ -6,7 +6,7 @@ class Population {
     this.finished = false; // Are we finished evolving?
     this.target = p; // Target phrase
     this.mutationRate = m; // Mutation rate
-    this.perfectScore = 1;
+    this.perfectScore = 0.96; //Perfect score is nearly impossible, so we settle for 96%
 
     this.best = "";
 
