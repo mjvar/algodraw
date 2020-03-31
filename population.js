@@ -77,7 +77,7 @@ class Population {
     }
 
     // Check if the target has been met
-    if (worldrecord == this.perfectScore) {
+    if (worldrecord > this.perfectScore) {
       this.finished = true;
     }
     return index;
