@@ -63,7 +63,7 @@ function keyPressed(){
     for (let x = 0; x < resolution; x++){
       for (let y = 0; y < resolution; y++){
         // Get the pixel value (low resolution) of the user's drawing
-        thepix = get(x*4 + 100, y*4 + 100);
+        thepix = get(x*4, y*4);
         target[x][y] = map(thepix[0], 0, 255, 0, 1);
       }
     }
