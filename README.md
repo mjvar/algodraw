@@ -1,5 +1,7 @@
+# Algodraw
+
 Genetic algorithm in p5.js that mimics user-generated drawings through random generation, mutation, and survival of the fittest.
-LINK: https://mjvar.github.io/mjvar-algodraw.io/
+LINK: https://mjvar.github.io/algodraw/
 
 Drag mouse to draw, then press enter to start the genetic algorithm.
 
