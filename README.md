@@ -1,5 +1,7 @@
 # Algodraw
 
+<img src="algodraw_demo.gif" width="800px">
+
 Genetic algorithm in p5.js that mimics user-generated drawings through random generation, mutation, and survival of the fittest.
 [Live demo link here.](https://mjvar.github.io/algodraw/)
 
